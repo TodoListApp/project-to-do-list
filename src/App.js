@@ -1,9 +1,12 @@
 import "./App.css";
+import AllTasks from "./components/AllTasks";
+import CreateTask from "./components/CreateTask";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <CreateTask/>
+      <AllTasks/>
     </div>
   );
 }
