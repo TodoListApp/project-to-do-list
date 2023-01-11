@@ -1,12 +1,14 @@
+import React, { useState } from "react";
 import "./App.css";
 import AllTasks from "./components/AllTasks";
 import CreateTask from "./components/CreateTask";
 
 function App() {
+  const [updateTasks, setUpdateTasks] = useState(false);
   return (
     <div className="App">
-      <CreateTask/>
-      <AllTasks/>
+      <CreateTask setUpdateTasks={setUpdateTasks} updateTasks={updateTasks} />
+      <AllTasks setUpdateTasks={setUpdateTasks} updateTasks={updateTasks} />
     </div>
   );
 }

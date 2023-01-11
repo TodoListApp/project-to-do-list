@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Task from "./Task";
 
-function AllTasks() {
+function AllTasks({ setUpdateTasks, updateTasks }) {
   const URL = "http://localhost:3004/tasks";
 
   const getData = async () => {
@@ -16,12 +16,17 @@ function AllTasks() {
     getData().then((response) => {
       setTasks(response.data);
     });
-  }, []);
+  }, [updateTasks]);
 
   return (
     <div>
       {tasks.map((task, index) => (
-        <Task key={index} task={task} />
+        <Task
+          key={index}
+          task={task}
+          setUpdateTasks={setUpdateTasks}
+          updateTasks={updateTasks}
+        />
       ))}
     </div>
   );

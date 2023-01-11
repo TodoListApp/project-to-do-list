@@ -1,19 +1,24 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Hola",
-      "check": true
+      "taskText": "completar tarea",
+      "check": false,
+      "id": 6
     },
     {
-      "id": 2,
-      "text": "Hola 2",
-      "check": true
+      "taskText": "ñlkdfjñasoi",
+      "check": false,
+      "id": 8
     },
     {
-      "id": 3,
-      "text": "Hola 3 ",
-      "check": true
+      "taskText": "asdfadf",
+      "check": false,
+      "id": 9
+    },
+    {
+      "taskText": "nueva",
+      "check": false,
+      "id": 10
     }
   ]
 }
