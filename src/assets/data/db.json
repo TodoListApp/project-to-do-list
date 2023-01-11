@@ -19,6 +19,16 @@
       "taskText": "nueva",
       "check": false,
       "id": 10
+    },
+    {
+      "taskText": "otra nueva",
+      "check": false,
+      "id": 11
+    },
+    {
+      "taskText": "otra nueva3",
+      "check": false,
+      "id": 12
     }
   ]
 }

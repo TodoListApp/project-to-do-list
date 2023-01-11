@@ -6,6 +6,7 @@ function Task({ task, setUpdateTasks, updateTasks }) {
   const URL = "http://localhost:3004/tasks";
 
   const handleDelete = async () => {
+    //   añadir sweet alert para preguntar si esta seguro de eliminar tarea
     const response = await axios.delete(`${URL}/${task.id}`);
     if (response.status === 200) {
       Swal.fire("Task deleted succesfully!");

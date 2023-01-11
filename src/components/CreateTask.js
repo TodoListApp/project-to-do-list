@@ -18,7 +18,13 @@ function CreateTask({ setUpdateTasks, updateTasks }) {
     e.preventDefault();
     const response = await axios.post(URL, data);
     if (response.status === 201) {
-      Swal.fire("Task added succesfully!");
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Task added succesfully!",
+        showConfirmButton: false,
+        timer: 1000,
+      });
       setUpdateTasks(!updateTasks);
     } else {
       Swal.fire("Error!");
