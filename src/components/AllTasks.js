@@ -18,8 +18,6 @@ function AllTasks() {
     });
   }, []);
 
-  console.log(tasks);
-
   return (
     <div>
       {tasks.map((task, index) => (
