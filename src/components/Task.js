@@ -1,7 +1,7 @@
 import React from "react";
 
-function Task() {
-  return <div>Task</div>;
+function Task({ task }) {
+  return <div>{task.text}</div>;
 }
 
 export default Task;

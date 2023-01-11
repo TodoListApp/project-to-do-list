@@ -1,19 +1,19 @@
 {
-"tasks" : [{
-        "id": 1,
-        "text": "",
-        "check":true
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Hola",
+      "check": true
     },
     {
-        "id": 2,
-        "text": "",
-        "check":true
+      "id": 2,
+      "text": "Hola 2",
+      "check": true
     },
     {
-        "id": 3,
-        "text": "",
-        "check":true
+      "id": 3,
+      "text": "Hola 3 ",
+      "check": true
     }
-
-]
+  ]
 }

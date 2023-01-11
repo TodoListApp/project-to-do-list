@@ -1,12 +1,32 @@
-import React from 'react'
-import Task from './Task'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import Task from "./Task";
 
 function AllTasks() {
+  const URL = "http://localhost:3004/tasks";
+
+  const getData = async () => {
+    const response = axios.get(URL);
+    return response;
+  };
+
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    getData().then((response) => {
+      setTasks(response.data);
+    });
+  }, []);
+
+  console.log(tasks);
+
   return (
     <div>
-       <Task/>
+      {tasks.map((task, index) => (
+        <Task key={index} task={task} />
+      ))}
     </div>
-  )
+  );
 }
 
-export default AllTasks
+export default AllTasks;
