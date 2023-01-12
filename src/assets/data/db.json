@@ -1,16 +1,6 @@
 {
   "tasks": [
     {
-      "taskText": "completar tarea",
-      "check": false,
-      "id": 6
-    },
-    {
-      "taskText": "ñlkdfjñasoi",
-      "check": false,
-      "id": 8
-    },
-    {
       "taskText": "asdfadf",
       "check": false,
       "id": 9
@@ -29,6 +19,16 @@
       "taskText": "otra nueva3",
       "check": false,
       "id": 12
+    },
+    {
+      "taskText": "sdafjhañfa",
+      "check": false,
+      "id": 13
+    },
+    {
+      "taskText": "dasfdasf",
+      "check": false,
+      "id": 14
     }
   ]
 }
