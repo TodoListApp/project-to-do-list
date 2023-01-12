@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Swal from "sweetalert2";
 
 function CreateTask({ setUpdateTasks, updateTasks }) {
-  const [data, setData] = useState({ taskText: "", check: false });
+  const [data, setData] = useState({ taskText: "" });
 
   const handleChange = ({ target }) => {
     setData({
